@@ -1,0 +1,44 @@
+{
+  "name": "vite-react-electron",
+  "description": "Vite + React + Electron Template!",
+  "version": "0.1.0",
+  "author": {
+    "name": "PleahMaCaka",
+    "email": "pleahmacaka@gmail.com"
+  },
+  "homepage": "https://github.com/pleahmacaka/vite-react-electron",
+  "license": "MIT",
+  "packageManager": "pnpm@8.2.0",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:electron": "electron-builder",
+    "all:build": "pnpm build && pnpm build:electron"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.0",
+    "redux": "^4.2.1",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@pleahmacaka/logger": "^3.0.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/node": "^18.16.3",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "@types/react-redux": "^7.1.25",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react-swc": "^3.3.0",
+    "electron": "^24.8.5",
+    "electron-builder": "^23.6.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-electron": "^0.11.2"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-electron
+release
+
+*.tsbuildinfo
+
+# IDE
+.vscode
+.fleet
+.idea
+.DS_Store

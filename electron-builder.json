@@ -1,0 +1,41 @@
+{
+  "appId": "io.github.pleahmacaka.template",
+  "artifactName": "${productName}-${version}.${ext}",
+  "asar": true,
+  "icon": "./public/icon.ico",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist",
+    "dist-electron"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ]
+  },
+  "mac": {
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "./public/icon.png",
+    "category": "Development",
+    "target": [
+      "deb"
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false
+  }
+}
